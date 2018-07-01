@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BJAfam Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3c4859" />
+</head>
+<body>
+ 
+  <header class="header">
+		<h1 class="logo"><a href="#">Currency Converter</a></h1>
+      <h2 class="todaysDate"></h2> 
+  </header> 
+  
+  <div class="warning">
+    <p>You are currently offline. but you can convert previously used currency pairs</p>
+  </div>
+  <div class="list">
+
+  </div>
+
+  <div class="container">
+
+    <main>
+      <div class="welcome">
+        <p>Get real time exchange rates with our free currency converter!!! Easy to use and reliable</p>
+      </div>
+      <div class="card">
+        <div class="input-container">
+          <label>
+            <select id="inputSelector">
+            
+            </select>
+          </label>
+          <input type="number" placeholder="Enter Amount here" class="amount">
+        </div>
+
+        <div class="convert">
+          <button class="calculate">Convert</button>
+
+          <p class="converting">Converting...</p>
+        </div>
+
+        <div class="output-container">
+          <label>
+            <select id="outputSelector">
+            
+            </select>
+          </label>
+        </div>
+        <input type="text" placeholder="Converted amount" class="result" disabled id="result">
+        
+        <button class="clear">Clear</button>
+      </div>
+      
+    </main>
+
+  </div>
+
+  <footer>Made by BjAfam & Powered by <span><a href="https://free.currencyconverterapi.com/" target="_blank">Currency converter API</a></span></footer>
+
+  <script src="idb.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
