@@ -9,7 +9,7 @@ const filesToCache = [
   './manifest.json'
 ];
 
-const staticCache = 'cc-v1';
+const staticCache = 'cc-v2';
 
 
 self.addEventListener('install', event => {
